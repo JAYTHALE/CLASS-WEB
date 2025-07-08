@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, GraduationCap } from 'lucide-react';
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -25,14 +26,13 @@ const Navbar = () => {
     { name: 'Results', path: '/results' },
     { name: 'Facilities', path: '/facilities' },
     { name: 'Gallery', path: '/gallery' },
-    { name: 'Attendance', path: '/student-attendance' },
+    // { name: 'Attendance', path: '/student-attendance' },
     { name: 'Contact', path: '/contact' }
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
-    }`}>
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
+      }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -49,11 +49,10 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.path
-                    ? scrolled ? 'text-blue-600' : 'text-blue-200'
-                    : scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
-                }`}
+                className={`text-sm font-medium transition-colors duration-200 ${location.pathname === item.path
+                  ? scrolled ? 'text-blue-600' : 'text-blue-200'
+                  : scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
+                  }`}
               >
                 {item.name}
               </Link>
@@ -79,11 +78,10 @@ const Navbar = () => {
                 <Link
                   key={item.name}
                   to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
-                    location.pathname === item.path
-                      ? 'text-blue-600 bg-blue-50'
-                      : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-                  }`}
+                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${location.pathname === item.path
+                    ? 'text-blue-600 bg-blue-50'
+                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
+                    }`}
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}

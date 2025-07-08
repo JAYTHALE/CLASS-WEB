@@ -13,6 +13,7 @@ import StudentAttendance from './pages/StudentAttendance';
 import TeacherAttendance from './pages/TeacherAttendance';
 import Facilities from './pages/Facilities';
 import Gallery from './pages/Gallery';
+import Details from './pages/Details';
 
 function App() {
   return (
@@ -27,8 +28,9 @@ function App() {
           <Route path="/online-classes" element={<OnlineClasses />} />
           <Route path="/offline-classes" element={<OfflineClasses />} />
           <Route path="/results" element={<Results />} />
-          <Route path="/student-attendance" element={<StudentAttendance />} />
-          <Route path="/teacher-attendance" element={<TeacherAttendance />} />
+          <Route path="/details/:id" element={<Details />} />
+          {/* <Route path="/student-attendance" element={<StudentAttendance />} /> */}
+          {/* <Route path="/teacher-attendance" element={<TeacherAttendance />} /> */}
           <Route path="/facilities" element={<Facilities />} />
           <Route path="/gallery" element={<Gallery />} />
         </Routes>

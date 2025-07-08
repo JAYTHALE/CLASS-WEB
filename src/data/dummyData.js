@@ -187,13 +187,13 @@ export const facilities = [
     icon: "BookOpen",
     image: "https://images.pexels.com/photos/481021/pexels-photo-481021.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
-  {
-    id: 2,
-    name: "Science Labs",
-    description: "Modern physics, chemistry, and biology laboratories",
-    icon: "Flask",
-    image: "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=400"
-  },
+  // {
+  //   id: 2,
+  //   name: "Science Labs",
+  //   description: "Modern physics, chemistry, and biology laboratories",
+  //   icon: "Flask",
+  //   image: "https://images.pexels.com/photos/2280549/pexels-photo-2280549.jpeg?auto=compress&cs=tinysrgb&w=400"
+  // },
   {
     id: 3,
     name: "Smart Classrooms",
@@ -201,13 +201,13 @@ export const facilities = [
     icon: "Monitor",
     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
-  {
-    id: 4,
-    name: "Hostel",
-    description: "Comfortable accommodation for outstation students",
-    icon: "Home",
-    image: "https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=400"
-  },
+  // {
+  //   id: 4,
+  //   name: "Hostel",
+  //   description: "Comfortable accommodation for outstation students",
+  //   icon: "Home",
+  //   image: "https://images.pexels.com/photos/1090638/pexels-photo-1090638.jpeg?auto=compress&cs=tinysrgb&w=400"
+  // },
   {
     id: 5,
     name: "Cafeteria",
@@ -215,13 +215,13 @@ export const facilities = [
     icon: "Coffee",
     image: "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=400"
   },
-  {
-    id: 6,
-    name: "Sports Complex",
-    description: "Indoor and outdoor sports facilities",
-    icon: "Trophy",
-    image: "https://images.pexels.com/photos/159832/basketball-ball-streetball-sport-159832.jpeg?auto=compress&cs=tinysrgb&w=400"
-  }
+  // {
+  //   id: 6,
+  //   name: "Sports Complex",
+  //   description: "Indoor and outdoor sports facilities",
+  //   icon: "Trophy",
+  //   image: "https://images.pexels.com/photos/159832/basketball-ball-streetball-sport-159832.jpeg?auto=compress&cs=tinysrgb&w=400"
+  // }
 ];
 
 export const testimonials = [

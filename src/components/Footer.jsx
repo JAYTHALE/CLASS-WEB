@@ -30,7 +30,7 @@ const Footer = () => {
               <span className="text-xl font-bold">Excellence Academy</span>
             </div>
             <p className="text-gray-300">
-              Leading coaching institute providing quality education and excellent results 
+              Leading coaching institute providing quality education and excellent results
               for competitive exams and board examinations.
             </p>
             <div className="flex space-x-4">
@@ -108,3 +108,10 @@ const Footer = () => {
 };
 
 export default Footer;
+
+
+
+
+
+
+

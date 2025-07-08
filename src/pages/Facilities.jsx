@@ -51,7 +51,7 @@ const Facilities = () => {
               Everything you need for a comprehensive learning experience
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {facilities.map((facility, index) => {
               const IconComponent = iconMap[facility.icon];
@@ -84,7 +84,7 @@ const Facilities = () => {
               Extra conveniences for your comfort and convenience
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {additionalFacilities.map((facility, index) => (
               <div key={index} className="bg-white p-8 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
@@ -115,25 +115,25 @@ const Facilities = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Digital Library</h3>
                     <p className="text-gray-600">
-                      Access to over 10,000 books, journals, and digital resources. 
+                      Access to over 10,000 books, journals, and digital resources.
                       Quiet study areas with individual desks and group study rooms.
                     </p>
                   </div>
                 </div>
-                
-                <div className="flex items-start">
+
+                {/* <div className="flex items-start">
                   <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
                     <Flask className="h-5 w-5 text-blue-600" />
                   </div>
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Advanced Laboratories</h3>
                     <p className="text-gray-600">
-                      Fully equipped physics, chemistry, and biology labs with modern 
+                      Fully equipped physics, chemistry, and biology labs with modern
                       equipment and safety measures for hands-on learning.
                     </p>
                   </div>
-                </div>
-                
+                </div> */}
+
                 <div className="flex items-start">
                   <div className="bg-blue-100 p-2 rounded-full mr-4 mt-1">
                     <Monitor className="h-5 w-5 text-blue-600" />
@@ -141,20 +141,20 @@ const Facilities = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Smart Classrooms</h3>
                     <p className="text-gray-600">
-                      Interactive whiteboards, projectors, and audio-visual equipment 
+                      Interactive whiteboards, projectors, and audio-visual equipment
                       in every classroom for enhanced learning experience.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
-            
+
             <div>
               <h2 className="text-3xl font-bold text-gray-900 mb-6">
                 Student Support Services
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start">
+                {/* <div className="flex items-start">
                   <div className="bg-green-100 p-2 rounded-full mr-4 mt-1">
                     <Home className="h-5 w-5 text-green-600" />
                   </div>
@@ -165,8 +165,8 @@ const Facilities = () => {
                       with 24/7 security and mess facilities.
                     </p>
                   </div>
-                </div>
-                
+                </div> */}
+
                 <div className="flex items-start">
                   <div className="bg-green-100 p-2 rounded-full mr-4 mt-1">
                     <Coffee className="h-5 w-5 text-green-600" />
@@ -174,13 +174,13 @@ const Facilities = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-2">Cafeteria & Food Court</h3>
                     <p className="text-gray-600">
-                      Hygienic food preparation with variety of healthy meals, snacks, 
+                      Hygienic food preparation with variety of healthy meals, snacks,
                       and beverages at affordable prices.
                     </p>
                   </div>
                 </div>
-                
-                <div className="flex items-start">
+
+                {/* <div className="flex items-start">
                   <div className="bg-green-100 p-2 rounded-full mr-4 mt-1">
                     <Trophy className="h-5 w-5 text-green-600" />
                   </div>
@@ -191,7 +191,7 @@ const Facilities = () => {
                       badminton, table tennis, and fitness center.
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
@@ -209,38 +209,38 @@ const Facilities = () => {
               Our facilities are available during the following hours
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold mb-3">Library</h3>
               <p className="text-gray-600">Monday - Saturday: 7:00 AM - 9:00 PM</p>
               <p className="text-gray-600">Sunday: 8:00 AM - 6:00 PM</p>
             </div>
-            
+            {/* 
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold mb-3">Laboratories</h3>
               <p className="text-gray-600">Monday - Saturday: 8:00 AM - 6:00 PM</p>
               <p className="text-gray-600">Sunday: Closed</p>
-            </div>
-            
+            </div> */}
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold mb-3">Cafeteria</h3>
               <p className="text-gray-600">Monday - Saturday: 7:00 AM - 8:00 PM</p>
               <p className="text-gray-600">Sunday: 8:00 AM - 6:00 PM</p>
             </div>
-            
-            <div className="bg-white p-6 rounded-lg shadow-md">
+
+            {/* <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold mb-3">Sports Complex</h3>
               <p className="text-gray-600">Monday - Saturday: 6:00 AM - 9:00 PM</p>
               <p className="text-gray-600">Sunday: 7:00 AM - 8:00 PM</p>
-            </div>
-            
+            </div> */}
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold mb-3">Computer Lab</h3>
               <p className="text-gray-600">Monday - Saturday: 8:00 AM - 8:00 PM</p>
               <p className="text-gray-600">Sunday: 9:00 AM - 5:00 PM</p>
             </div>
-            
+
             <div className="bg-white p-6 rounded-lg shadow-md">
               <h3 className="text-lg font-semibold mb-3">Administrative Office</h3>
               <p className="text-gray-600">Monday - Saturday: 9:00 AM - 6:00 PM</p>
