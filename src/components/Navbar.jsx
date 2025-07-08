@@ -31,27 +31,29 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-white shadow-lg' : 'bg-transparent'
-      }`}>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-white shadow-md" : "bg-white/60 backdrop-blur-md"
+        }`}
+    >
+      <div className="px-10 py-4">
+        <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <GraduationCap className={`h-8 w-8 ${scrolled ? 'text-blue-600' : 'text-white'}`} />
-            <span className={`text-xl font-bold ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+          <Link to="/" className="flex items-center gap-2">
+            <GraduationCap className="h-7 w-7 text-blue-600" />
+            <span className="text-2xl font-bold text-gray-900">
               Excellence Academy
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Menu */}
+          <div className="hidden md:flex space-x-8">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 to={item.path}
-                className={`text-sm font-medium transition-colors duration-200 ${location.pathname === item.path
-                  ? scrolled ? 'text-blue-600' : 'text-blue-200'
-                  : scrolled ? 'text-gray-700 hover:text-blue-600' : 'text-white hover:text-blue-200'
+                className={`text-[16px] font-medium transition-colors duration-300 ${location.pathname === item.path
+                  ? "text-blue-600 border-b-2 border-blue-600 pb-1"
+                  : "text-gray-700 hover:text-blue-600"
                   }`}
               >
                 {item.name}
@@ -59,35 +61,33 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Mobile menu button */}
+          {/* Mobile Hamburger */}
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md ${scrolled ? 'text-gray-700' : 'text-white'}`}
+              className="text-blue-600 focus:outline-none"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
             </button>
           </div>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg rounded-b-lg">
-              {navItems.map((item) => (
-                <Link
-                  key={item.name}
-                  to={item.path}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${location.pathname === item.path
-                    ? 'text-blue-600 bg-blue-50'
-                    : 'text-gray-700 hover:text-blue-600 hover:bg-blue-50'
-                    }`}
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+          <div className="md:hidden mt-2 rounded-lg bg-white shadow-lg py-3 px-4 animate-fadeIn">
+            {navItems.map((item) => (
+              <Link
+                key={item.name}
+                to={item.path}
+                className={`block px-4 py-2 rounded-md font-medium ${location.pathname === item.path
+                  ? "bg-blue-50 text-blue-600"
+                  : "text-gray-800 hover:bg-blue-100 hover:text-blue-600"
+                  }`}
+                onClick={() => setIsOpen(false)}
+              >
+                {item.name}
+              </Link>
+            ))}
           </div>
         )}
       </div>
