@@ -18,7 +18,7 @@ const Contact = () => {
       ...prev,
       [name]: value
     }));
-    
+
     // Clear error when user starts typing
     if (errors[name]) {
       setErrors(prev => ({
@@ -30,38 +30,38 @@ const Contact = () => {
 
   const validateForm = () => {
     const newErrors = {};
-    
+
     if (!formData.name.trim()) {
       newErrors.name = 'Name is required';
     }
-    
+
     if (!formData.email.trim()) {
       newErrors.email = 'Email is required';
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       newErrors.email = 'Email is invalid';
     }
-    
+
     if (!formData.phone.trim()) {
       newErrors.phone = 'Phone number is required';
     } else if (!/^\d{10}$/.test(formData.phone.replace(/\D/g, ''))) {
       newErrors.phone = 'Phone number must be 10 digits';
     }
-    
+
     if (!formData.subject.trim()) {
       newErrors.subject = 'Subject is required';
     }
-    
+
     if (!formData.message.trim()) {
       newErrors.message = 'Message is required';
     }
-    
+
     return newErrors;
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const newErrors = validateForm();
-    
+
     if (Object.keys(newErrors).length === 0) {
       // Form is valid, submit the data
       console.log('Form submitted:', formData);
@@ -133,9 +133,8 @@ const Contact = () => {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${
-                      errors.name ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${errors.name ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     placeholder="Enter your full name"
                   />
                   {errors.name && <p className="mt-1 text-sm text-red-600">{errors.name}</p>}
@@ -151,9 +150,8 @@ const Contact = () => {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${
-                      errors.email ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${errors.email ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     placeholder="Enter your email address"
                   />
                   {errors.email && <p className="mt-1 text-sm text-red-600">{errors.email}</p>}
@@ -169,9 +167,8 @@ const Contact = () => {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${
-                      errors.phone ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${errors.phone ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     placeholder="Enter your phone number"
                   />
                   {errors.phone && <p className="mt-1 text-sm text-red-600">{errors.phone}</p>}
@@ -187,9 +184,8 @@ const Contact = () => {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${
-                      errors.subject ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${errors.subject ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     placeholder="Enter the subject"
                   />
                   {errors.subject && <p className="mt-1 text-sm text-red-600">{errors.subject}</p>}
@@ -205,9 +201,8 @@ const Contact = () => {
                     value={formData.message}
                     onChange={handleChange}
                     rows={5}
-                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${
-                      errors.message ? 'border-red-500' : 'border-gray-300'
-                    }`}
+                    className={`w-full px-4 py-3 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 ${errors.message ? 'border-red-500' : 'border-gray-300'
+                      }`}
                     placeholder="Enter your message"
                   ></textarea>
                   {errors.message && <p className="mt-1 text-sm text-red-600">{errors.message}</p>}
@@ -228,21 +223,21 @@ const Contact = () => {
               <div>
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Get in Touch</h2>
                 <p className="text-gray-600 text-lg mb-8">
-                  We'd love to hear from you! Whether you have questions about our courses, 
-                  need guidance on admissions, or want to discuss your educational goals, 
+                  We'd love to hear from you! Whether you have questions about our courses,
+                  need guidance on admissions, or want to discuss your educational goals,
                   our team is here to help.
                 </p>
               </div>
 
               <div className="space-y-6">
                 {contactInfo.map((info, index) => (
-                  <div key={index} className="flex items-start space-x-4">
-                    <div className="text-blue-600 mt-1">
+                  <div key={index} className="flex items-start space-x-4 ">
+                    <div className="text-blue-600 mt-1 hover:translate-x-1 transition-all duration-200 ">
                       {info.icon}
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-900 mb-2">{info.title}</h3>
-                      <div className="space-y-1">
+                      <h3 className="font-semibold text-gray-900 mb-2 hover:translate-x-1 transition-all duration-200">{info.title}</h3>
+                      <div className="space-y-1 ">
                         {info.details.map((detail, detailIndex) => (
                           <p key={detailIndex} className="text-gray-600">
                             {detail}
@@ -269,7 +264,7 @@ const Contact = () => {
               Visit our campus and experience our learning environment
             </p>
           </div>
-          
+
           {/* Dummy Map */}
           <div className="bg-gray-300 h-96 rounded-lg flex items-center justify-center">
             <div className="text-center">

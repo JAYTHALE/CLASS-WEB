@@ -17,15 +17,15 @@ const Courses = () => {
     const competitiveExams = ['JEE Main & Advanced', 'NEET', 'CET'];
     const governmentExams = ['UPSC', 'MPSC'];
     const schoolCourses = ['11th Science', '12th Science'];
-    
+
     if (competitiveExams.includes(courseName)) return 'competitive';
     if (governmentExams.includes(courseName)) return 'government';
     if (schoolCourses.includes(courseName)) return 'school';
     return 'all';
   };
 
-  const filteredCourses = selectedCategory === 'all' 
-    ? courses 
+  const filteredCourses = selectedCategory === 'all'
+    ? courses
     : courses.filter(course => getCourseCategory(course.name) === selectedCategory);
 
   return (
@@ -50,11 +50,10 @@ const Courses = () => {
               <button
                 key={category.id}
                 onClick={() => setSelectedCategory(category.id)}
-                className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${
-                  selectedCategory === category.id
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
+                className={`px-6 py-2 rounded-full font-medium transition-colors duration-200 ${selectedCategory === category.id
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
               >
                 {category.name}
               </button>
@@ -80,7 +79,7 @@ const Courses = () => {
                     <Clock className="h-5 w-5 mr-2" />
                     <span>{course.duration}</span>
                   </div>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {course.subjects.map((subject, index) => (
                       <span
@@ -91,7 +90,7 @@ const Courses = () => {
                       </span>
                     ))}
                   </div>
-                  
+
                   <div className="flex items-center justify-between">
                     <div className="text-2xl font-bold text-blue-600">
                       {course.fees}
@@ -105,7 +104,7 @@ const Courses = () => {
                       <span className="ml-1 text-gray-600 text-sm">4.8</span>
                     </div>
                   </div>
-                  
+
                   <div className="flex space-x-3">
                     <button className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 px-4 rounded-lg font-medium transition-colors duration-200">
                       Enroll Now
@@ -132,33 +131,33 @@ const Courses = () => {
               Features that make our programs stand out
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
               <BookOpen className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Comprehensive Curriculum</h3>
               <p className="text-gray-600">
                 Well-structured syllabus covering all important topics
               </p>
             </div>
-            
-            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+
+            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
               <Users className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Expert Faculty</h3>
               <p className="text-gray-600">
                 Experienced teachers with proven track records
               </p>
             </div>
-            
-            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+
+            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
               <Star className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Regular Assessments</h3>
               <p className="text-gray-600">
                 Continuous evaluation to track progress
               </p>
             </div>
-            
-            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+
+            <div className="text-center p-6 bg-white rounded-lg shadow-lg">
               <Clock className="h-12 w-12 text-blue-600 mx-auto mb-4" />
               <h3 className="text-xl font-semibold mb-2">Flexible Timings</h3>
               <p className="text-gray-600">
