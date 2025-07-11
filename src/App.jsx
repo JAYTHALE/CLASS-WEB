@@ -19,6 +19,7 @@ import { IoCallSharp, IoInformationCircle } from 'react-icons/io5';
 import { FaBookBookmark } from 'react-icons/fa6';
 import { MdDisplaySettings } from 'react-icons/md';
 import BottomNav from './components/bottomNav';
+import BottomTab from './components/BottomTab';
 
 function App() {
   return (
@@ -42,7 +43,7 @@ function App() {
           </div>
           <Footer />
         </div>
-        <BottomNav />
+        <BottomTab />
       </Router>
     </>
   );
