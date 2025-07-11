@@ -1,69 +1,149 @@
 // Dummy data for the coaching institute website
 
+// export const courses = [
+//   {
+//     id: 1,
+//     name: "11th Science",
+//     description: "Complete foundation course for 11th standard students",
+//     subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
+//     duration: "1 Year",
+//     fees: "₹25,000",
+//     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   },
+//   {
+//     id: 2,
+//     name: "12th Science",
+//     description: "Advanced course for 12th standard board exam preparation",
+//     subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
+//     duration: "1 Year",
+//     fees: "₹30,000",
+//     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   },
+//   {
+//     id: 3,
+//     name: "JEE Main & Advanced",
+//     description: "Comprehensive preparation for JEE Main and Advanced",
+//     subjects: ["Physics", "Chemistry", "Mathematics"],
+//     duration: "2 Years",
+//     fees: "₹50,000",
+//     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   },
+//   {
+//     id: 4,
+//     name: "NEET",
+//     description: "Complete medical entrance exam preparation",
+//     subjects: ["Physics", "Chemistry", "Biology"],
+//     duration: "2 Years",
+//     fees: "₹45,000",
+//     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   },
+//   {
+//     id: 5,
+//     name: "CET",
+//     description: "Common Entrance Test preparation",
+//     subjects: ["Physics", "Chemistry", "Mathematics"],
+//     duration: "1 Year",
+//     fees: "₹20,000",
+//     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   },
+//   {
+//     id: 6,
+//     name: "UPSC",
+//     description: "Civil Services Examination preparation",
+//     subjects: ["General Studies", "Optional Subject", "Essay"],
+//     duration: "2 Years",
+//     fees: "₹60,000",
+//     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   },
+//   {
+//     id: 7,
+//     name: "MPSC",
+//     description: "Maharashtra Public Service Commission preparation",
+//     subjects: ["General Studies", "Optional Subject"],
+//     duration: "1.5 Years",
+//     fees: "₹35,000",
+//     image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+//   }
+// ];
 export const courses = [
   {
-    id: 1,
-    name: "11th Science",
-    description: "Complete foundation course for 11th standard students",
+    id: '1',
+    title: '11th & 12th Science + NEET + MHT-CET + JEE',
+    description: 'A two-year integrated program for 11th and 12th students targeting NEET, MHT-CET, and JEE exams.',
+    category: 'Competitive',
+    duration: '24 months',
     subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
-    duration: "1 Year",
-    fees: "₹25,000",
-    image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+    students: 60,
+    rating: 4.9,
+    price: '₹50,000',
+    image: 'https://images.pexels.com/photos/4144222/pexels-photo-4144222.jpeg?auto=compress&cs=tinysrgb&w=400',
+    level: 'Advanced',
   },
   {
-    id: 2,
-    name: "12th Science",
-    description: "Advanced course for 12th standard board exam preparation",
+    id: '2',
+    title: 'Crash Course for NEET, MHT-CET & JEE',
+    description: 'A quick revision program covering essential topics for NEET, CET, and JEE aspirants.',
+    category: 'Competitive',
+    duration: '3 months',
     subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
-    duration: "1 Year",
-    fees: "₹30,000",
-    image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+    students: 100,
+    rating: 4.7,
+    price: '₹12,000',
+    image: 'https://images.pexels.com/photos/256395/pexels-photo-256395.jpeg?auto=compress&cs=tinysrgb&w=400',
+    level: 'Intermediate',
   },
   {
-    id: 3,
-    name: "JEE Main & Advanced",
-    description: "Comprehensive preparation for JEE Main and Advanced",
-    subjects: ["Physics", "Chemistry", "Mathematics"],
-    duration: "2 Years",
-    fees: "₹50,000",
-    image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+    id: '3',
+    title: '8th, 9th & 10th All Mediums',
+    description: 'Foundation courses for school students from 8th to 10th standard in all mediums.',
+    category: 'Science',
+    duration: '36 months',
+    subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
+    students: 250,
+    rating: 4.6,
+    price: '₹18,000',
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=400',
+    level: 'Beginner',
   },
   {
-    id: 4,
-    name: "NEET",
-    description: "Complete medical entrance exam preparation",
-    subjects: ["Physics", "Chemistry", "Biology"],
-    duration: "2 Years",
-    fees: "₹45,000",
-    image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+    id: '4',
+    title: 'Spoken English Course',
+    description: 'Enhance your English communication skills through practical sessions and activities.',
+    category: 'Language',
+    duration: '3 months',
+    subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
+    students: 180,
+    rating: 4.5,
+    price: '₹3,000',
+    image: 'https://images.pexels.com/photos/3768894/pexels-photo-3768894.jpeg?auto=compress&cs=tinysrgb&w=400',
+    level: 'All Levels',
   },
   {
-    id: 5,
-    name: "CET",
-    description: "Common Entrance Test preparation",
-    subjects: ["Physics", "Chemistry", "Mathematics"],
-    duration: "1 Year",
-    fees: "₹20,000",
-    image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+    id: '5',
+    title: 'Midbrain Development Course',
+    description: 'A scientifically designed course to enhance memory, concentration, and creativity in children.',
+    category: 'Science',
+    duration: '2 months',
+    subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
+    students: 75,
+    rating: 4.4,
+    price: '₹4,000',
+    image: 'https://images.pexels.com/photos/4145193/pexels-photo-4145193.jpeg?auto=compress&cs=tinysrgb&w=400',
+    level: 'Beginner',
   },
   {
-    id: 6,
-    name: "UPSC",
-    description: "Civil Services Examination preparation",
-    subjects: ["General Studies", "Optional Subject", "Essay"],
-    duration: "2 Years",
-    fees: "₹60,000",
-    image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
+    id: '6',
+    title: 'Handwriting Improvement Course',
+    description: 'Special course to improve handwriting skills in both cursive and print styles.',
+    category: 'Language',
+    duration: '1.5 months',
+    subjects: ["Physics", "Chemistry", "Mathematics", "Biology"],
+    students: 90,
+    rating: 4.3,
+    price: '₹2,500',
+    image: 'https://images.pexels.com/photos/590587/pexels-photo-590587.jpeg?auto=compress&cs=tinysrgb&w=400',
+    level: 'Beginner',
   },
-  {
-    id: 7,
-    name: "MPSC",
-    description: "Maharashtra Public Service Commission preparation",
-    subjects: ["General Studies", "Optional Subject"],
-    duration: "1.5 Years",
-    fees: "₹35,000",
-    image: "https://images.pexels.com/photos/5427648/pexels-photo-5427648.jpeg?auto=compress&cs=tinysrgb&w=400"
-  }
 ];
 
 export const teachers = [

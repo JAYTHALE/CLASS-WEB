@@ -82,12 +82,20 @@ const Footer = () => {
               <div className="flex items-start space-x-3 hover:translate-x-1 transition-all duration-200">
                 <MapPin className="h-5 w-5 text-blue-500 mt-0.5" />
                 <p className="text-gray-300 ">
-                  123 Education Street, Knowledge City, Mumbai - 400001
+                  पोस्ट ऑफिस शेजारी, फुलंब्री
                 </p>
               </div>
               <div className="flex items-center space-x-3 hover:translate-x-1 transition-all duration-200">
                 <Phone className="h-5 w-5 text-blue-500 hover:translate-x-1 transition-all duration-200" />
-                <p className="text-gray-300">+91 98765 43210</p>
+                <p className="text-gray-300">+91 7588535563</p>
+              </div>
+              <div className="flex items-center space-x-3 hover:translate-x-1 transition-all duration-200">
+                <Phone className="h-5 w-5 text-blue-500 hover:translate-x-1 transition-all duration-200" />
+                <p className="text-gray-300">+91 8421728076</p>
+              </div>
+              <div className="flex items-center space-x-3 hover:translate-x-1 transition-all duration-200">
+                <Phone className="h-5 w-5 text-blue-500 hover:translate-x-1 transition-all duration-200" />
+                <p className="text-gray-300">+91 9226225330</p>
               </div>
               <div className="flex items-center space-x-3 hover:translate-x-1 transition-all duration-200">
                 <Mail className="h-5 w-5 text-blue-500 " />
