@@ -13,12 +13,6 @@ import Results from './pages/Results';
 import Facilities from './pages/Facilities';
 import Gallery from './pages/Gallery';
 import Details from './pages/Details';
-
-import { FaCompass, FaHistory, FaHome, FaThumbsUp } from 'react-icons/fa';
-import { IoCallSharp, IoInformationCircle } from 'react-icons/io5';
-import { FaBookBookmark } from 'react-icons/fa6';
-import { MdDisplaySettings } from 'react-icons/md';
-import BottomNav from './components/bottomNav';
 import BottomTab from './components/BottomTab';
 
 function App() {
